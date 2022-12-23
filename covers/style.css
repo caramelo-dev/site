@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background: #54380f;
+  color: #d69a3a;
+}
+
+html,
+body {
+  color: #54380f;
+  height: 100%;
+  padding: 2vh 2vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-size: clamp(12px, 4vw, 30px);
+  line-height: 1.25;
+  font-weight: 300;
+  gap: 1em;
+  max-width: 90vw;
+  padding-bottom: 80px;
+}
+
+.header,
+.section {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  gap: .5em;
+}
+
+.section {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.header__title {
+  font-size: 1em;
+  width: 100%;
+  font-weight: 200;
+}
+
+.header input {
+  width: 90%;
+  max-width: 20em;
+  padding: .5em;
+  border: 1px solid #54380f;
+  border-radius: 5px;
+  color: #54380f;
+}
+
+.header input:focus {
+  border-width: 2px;
+}
+
+.text-container {
+  width: 100%;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.hashtag {
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 350px;
+  z-index: 1;
+}
+
+.whitemark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: .75;
+}
+
+.container {
+  position: relative;
+  width: 1080px;
+  height: 1080px;
+  background: #d69a3a;
+  font-size: 64px;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#instagram-story .container {
+  height: 1920px;
+}
+
+#instagram-story .container .logo {
+  top: 200px;
+}
+
+#instagram-story .container .whitemark {
+  height: unset;
+  width: 100%;
+}
+
+#dev-community .container .hashtag {
+  bottom: 200px;
+}
+
+#dev-community .container {
+  width: 1000px;
+  height: 420px;
+  font-size: 42px;
+  padding: 50px 100px;
+}
+
+#dev-community .container .logo {
+  top: 50px;
+  width: 195px;
+}
+
+#dev-community .container .text-container {
+  max-width: 700px;
+  margin-right: auto;
+}
+
+#dev-community .container .hashtag {
+  font-size: 20px;
+  bottom: 50px;
+  right: unset;
+  left: 100px;
+}
+
+#youtube .container {
+  width: 1920px;
+  height: 1080px;
+  font-size: 84px;
+  padding: 100px;
+}
+
+#youtube .container .logo {
+  width: 500px;
+}
+
+.controls {
+  display: flex;
+  width: 1080px;
+  padding: 1em 0;
+}
+
+.controls button:first-of-type {
+  margin-left: auto;
+  margin-right: .5em;
+}
+
+.to-jpeg,
+.to-png {
+  background: #d69a3a;
+  border: 1px solid #54380f;
+  border-radius: 5px;
+  color: #54380f;
+  cursor: pointer;
+  font-size: .5em;
+  font-weight: 300;
+  padding: .5em .5em;
+  text-decoration: none;
+  transition: background .2s ease-in-out, color .2s ease-in-out;
+}
+
+.to-jpeg:hover,
+.to-png:hover {
+  background: #54380f;
+  color: #d69a3a;
+}
